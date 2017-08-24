@@ -46,13 +46,13 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                     	botao2arma1: perfil.botao2arma1,
                         botao2arma2: perfil.botao2arma2,
                         botao3arma1: perfil.botao3arma1,
-                    	botao3arma2: perfil.botao3arma2
-                    	//municaocloq17: perfil.municaocloq17,
-                    	//municaotouronegro: perfil.municaotouronegro,
-                    	//municaokoltsucuri: perfil.municaokoltsucuri,
-                    	//qtdeespecial: perfil.qtdeespecial,
-                    	//qtdeenergetico: perfil.qtdeenergetico,
-                    	//qtdeqisuco: perfil.qtdeqisuco
+                    	botao3arma2: perfil.botao3arma2,
+                    	municaocloq17: perfil.municaocloq17,
+                    	municaotouronegro: perfil.municaotouronegro,
+                    	municaokoltsucuri: perfil.municaokoltsucuri,
+                    	qtdeespecial: perfil.qtdeespecial,
+                    	qtdeenergetico: perfil.qtdeenergetico,
+                    	qtdeqisuco: perfil.qtdeqisuco
                         
                 });
             } else {
@@ -74,12 +74,12 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfilrModel.botao2arma2 = req.body.botao2arma2;
                 perfilrModel.botao3arma1 = req.body.botao3arma1;
                 perfilrModel.botao3arma2 = req.body.botao3arma2;
-                //perfilrModel.municaocloq17 = req.body.municaocloq17;
-                //perfilrModel.municaotouronegro = req.body.municaotouronegro;
-                //perfilrModel.municaokoltsucuri = req.body.municaokoltsucuri;
-                //perfilrModel.qtdeespecial = req.body.qtdeespecial;
-                //perfilrModel.qtdeenergetico = req.body.qtdeenergetico;
-                //perfilrModel.qtdeqisuco = req.body.qtdeqisuco;
+                perfilrModel.municaocloq17 = req.body.municaocloq17;
+                perfilrModel.municaotouronegro = req.body.municaotouronegro;
+                perfilrModel.municaokoltsucuri = req.body.municaokoltsucuri;
+                perfilrModel.qtdeespecial = req.body.qtdeespecial;
+                perfilrModel.qtdeenergetico = req.body.qtdeenergetico;
+                perfilrModel.qtdeqisuco = req.body.qtdeqisuco;
                 
                 // Realiza o insert do Perfil
                 perfilrModel.save(function(err, perfil) {
@@ -101,13 +101,13 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                     	botao2arma1: perfilrModel.botao2arma1,
                         botao2arma2: perfilrModel.botao2arma2,
                         botao3arma1: perfilrModel.botao3arma1,
-                    	botao3arma2: perfilrModel.botao3arma2
-                    	//municaocloq17: perfilrModel.municaocloq17,
-                    	//municaotouronegro: perfilrModel.municaotouronegro,
-                    	//municaokoltsucuri: perfilrModel.municaokoltsucuri,
-                    	//qtdeespecial: perfilrModel.qtdeespecial,
-                    	//qtdeenergetico: perfilrModel.qtdeenergetico,
-                    	//qtdeqisuco: perfilrModel.qtdeqisuco
+                    	botao3arma2: perfilrModel.botao3arma2,
+                    	municaocloq17: perfilrModel.municaocloq17,
+                    	municaotouronegro: perfilrModel.municaotouronegro,
+                    	municaokoltsucuri: perfilrModel.municaokoltsucuri,
+                    	qtdeespecial: perfilrModel.qtdeespecial,
+                    	qtdeenergetico: perfilrModel.qtdeenergetico,
+                    	qtdeqisuco: perfilrModel.qtdeqisuco
                     	
                         });
                 })
@@ -144,12 +144,12 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfil.botao2arma2 = req.body.botao2arma2;
                 perfil.botao3arma1 = req.body.botao3arma1;
                 perfil.botao3arma2 = req.body.botao3arma2;
-                //perfil.municaocloq17 = req.body.municaocloq17;
-                //perfil.municaotouronegro = req.body.municaotouronegro;
-                //perfil.municaokoltsucuri = req.body.municaokoltsucuri;
-                //perfil.qtdeespecial = req.body.qtdeespecial;
-                //perfil.qtdeenergetico = req.body.qtdeenergetico;
-                //perfil.qtdeqisuco = req.body.qtdeqisuco;
+                perfil.municaocloq17 = req.body.municaocloq17;
+                perfil.municaotouronegro = req.body.municaotouronegro;
+                perfil.municaokoltsucuri = req.body.municaokoltsucuri;
+                perfil.qtdeespecial = req.body.qtdeespecial;
+                perfil.qtdeenergetico = req.body.qtdeenergetico;
+                perfil.qtdeqisuco = req.body.qtdeqisuco;
                 
                 //Realiza a atualizacao dos dados
                 perfil.save(function(err, perfil) {
