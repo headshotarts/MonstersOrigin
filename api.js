@@ -52,7 +52,21 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                     	municaokoltsucuri: perfil.municaokoltsucuri,
                     	qtdeespecial: perfil.qtdeespecial,
                     	qtdeenergetico: perfil.qtdeenergetico,
-                    	qtdeqisuco: perfil.qtdeqisuco
+                    	qtdeqisuco: perfil.qtdeqisuco,
+                    	sophiadesbloqueada: perfil.sophiadesbloqueada,
+                    	sophiaselecionada: perfil.sophiaselecionada,
+                    	royselecionado: perfil.royselecionado,         
+                        pontuacaopraia: perfil.pontuacaopraia,         
+                        pontuacaoselva: perfil.pontuacaoselva,          
+                        pontuacaoprefeitura: perfil.pontuacaoprefeitura,    
+                        pontuacaotemplo: perfil.pontuacaotemplo,        
+                        somaarmas: perfil.somaarmas,               
+                        somashc: perfil.somashc,                 
+                        somahc: perfil.somahc,                 
+                        sophia: perfil.sophia,                  
+                        somaitem: perfil.somaitem,                
+                        inimigosmortos: perfil.inimigosmortos
+                    	
                         
                 });
             } else {
@@ -80,6 +94,20 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfilrModel.qtdeespecial = req.body.qtdeespecial;
                 perfilrModel.qtdeenergetico = req.body.qtdeenergetico;
                 perfilrModel.qtdeqisuco = req.body.qtdeqisuco;
+                perfilrModel.sophiadesbloqueada = req.body.sophiadesbloqueada;
+                perfilrModel.sophiaselecionada = req.body.sophiaselecionada;
+                perfilrModel.royselecionado = req.body.royselecionado;          
+                perfilrModel.pontuacaopraia = req.body.pontuacaopraia;         
+                perfilrModel.pontuacaoselva  = req.body.pontuacaoselva;         
+                perfilrModel.pontuacaoprefeitura = req.body.pontuacaoprefeitura;    
+                perfilrModel.pontuacaotemplo = req.body.pontuacaotemplo;
+                perfilrModel.somaarmas = req.body.somaarmas;               
+                perfilrModel.somashc = req.body.somashc;                
+                perfilrModel.somahc = req.body.somahc;
+                perfilrModel.sophia = req.body.sophia;                  
+                perfilrModel.somaitem = req.body.somaitem;               
+                perfilrModel.inimigosmortos = req.body.inimigosmortos;          
+              
                 
                 // Realiza o insert do Perfil
                 perfilrModel.save(function(err, perfil) {
@@ -107,7 +135,20 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                     	municaokoltsucuri: perfilrModel.municaokoltsucuri,
                     	qtdeespecial: perfilrModel.qtdeespecial,
                     	qtdeenergetico: perfilrModel.qtdeenergetico,
-                    	qtdeqisuco: perfilrModel.qtdeqisuco
+                    	qtdeqisuco: perfilrModel.qtdeqisuco,
+                    	sophiadesbloqueada: perfilrModel.sophiadesbloqueada,    
+                        sophiaselecionada: perfilrModel.sophiaselecionada,       
+                        royselecionado: perfilrModel.royselecionado,          
+                        pontuacaopraia: perfilrModel.pontuacaopraia,         
+                        pontuacaoselva: perfilrModel.pontuacaoselva,          
+                        pontuacaoprefeitura: perfilrModel.pontuacaoprefeitura,    
+                        pontuacaotemplo: perfilrModel.pontuacaotemplo,        
+                        somaarmas: perfilrModel.somaarmas,               
+                        somashc: perfilrModel.somashc,                 
+                        somahc: perfilrModel.somahc,              
+                        sophia: perfilrModel.sophia,                  
+                        somaitem: perfilrModel.somaitem,                
+                        inimigosmortos: perfilrModel.inimigosmortos
                     	
                         });
                 })
@@ -150,6 +191,19 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfil.qtdeespecial = req.body.qtdeespecial;
                 perfil.qtdeenergetico = req.body.qtdeenergetico;
                 perfil.qtdeqisuco = req.body.qtdeqisuco;
+                perfil.sophiadesbloqueada = req.body.sophiadesbloqueada;
+                perfil.sophiaselecionada = req.body.sophiaselecionada;
+                perfil.royselecionado = req.body.royselecionado;          
+                perfil.pontuacaopraia = req.body.pontuacaopraia;         
+                perfil.pontuacaoselva  = req.body.pontuacaoselva;         
+                perfil.pontuacaoprefeitura = req.body.pontuacaoprefeitura;    
+                perfil.pontuacaotemplo = req.body.pontuacaotemplo;
+                perfil.somaarmas = req.body.somaarmas;               
+                perfil.somashc = req.body.somashc;                
+                perfil.somahc = req.body.somahc;
+                perfil.sophia = req.body.sophia;                  
+                perfil.somaitem = req.body.somaitem;               
+                perfil.inimigosmortos = req.body.inimigosmortos;    
                 
                 //Realiza a atualizacao dos dados
                 perfil.save(function(err, perfil) {
