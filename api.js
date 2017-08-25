@@ -65,7 +65,11 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         somahc: perfil.somahc,                 
                         sophia: perfil.sophia,                  
                         somaitem: perfil.somaitem,                
-                        inimigosmortos: perfil.inimigosmortos
+                        inimigosmortos: perfil.inimigosmortos,
+                        okenergetico: perfil.okenergetico,
+                        okespecial: perfil.okespecial,
+                        okqisuco: perfil.okqisuco
+                        
                     	
                         
                 });
@@ -106,7 +110,10 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfilrModel.somahc = req.body.somahc;
                 perfilrModel.sophia = req.body.sophia;                  
                 perfilrModel.somaitem = req.body.somaitem;               
-                perfilrModel.inimigosmortos = req.body.inimigosmortos;          
+                perfilrModel.inimigosmortos = req.body.inimigosmortos;
+                perfilrModel.okenergetico = req.body.okenergetico;
+                perfilrModel.okespecial = req.body.okespecial;
+                perfilrModel.okqisuco = req.body.okqisuco;
               
                 
                 // Realiza o insert do Perfil
@@ -148,7 +155,11 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         somahc: perfilrModel.somahc,              
                         sophia: perfilrModel.sophia,                  
                         somaitem: perfilrModel.somaitem,                
-                        inimigosmortos: perfilrModel.inimigosmortos
+                        inimigosmortos: perfilrModel.inimigosmortos,
+                        okenergetico: perfilrModel.okenergetico,
+                        okespecial: perfilrModel.okespecial,
+                        okqisuco: perfilrModel.okqisuco
+                        
                     	
                         });
                 })
@@ -203,7 +214,10 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfil.somahc = req.body.somahc;
                 perfil.sophia = req.body.sophia;                  
                 perfil.somaitem = req.body.somaitem;               
-                perfil.inimigosmortos = req.body.inimigosmortos;    
+                perfil.inimigosmortos = req.body.inimigosmortos;
+                perfil.okenergetico = req.body.okenergetico;
+                perfil.okespecial = req.body.okespecial;
+                perfil.okqisuco = req.body.okqisuco;
                 
                 //Realiza a atualizacao dos dados
                 perfil.save(function(err, perfil) {
