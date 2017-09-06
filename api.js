@@ -68,7 +68,8 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         inimigosmortos: perfil.inimigosmortos,
                         okenergetico: perfil.okenergetico,
                         okespecial: perfil.okespecial,
-                        okqisuco: perfil.okqisuco
+                        okqisuco: perfil.okqisuco,
+                        passouselva: perfil.passouselva
                         
                     	
                         
@@ -114,6 +115,7 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfilrModel.okenergetico = req.body.okenergetico;
                 perfilrModel.okespecial = req.body.okespecial;
                 perfilrModel.okqisuco = req.body.okqisuco;
+                perfilrModel.passouselva = req.body.passouselva;
               
                 
                 // Realiza o insert do Perfil
@@ -158,7 +160,8 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         inimigosmortos: perfilrModel.inimigosmortos,
                         okenergetico: perfilrModel.okenergetico,
                         okespecial: perfilrModel.okespecial,
-                        okqisuco: perfilrModel.okqisuco
+                        okqisuco: perfilrModel.okqisuco,
+                        passouselva: perfilrModel.passouselva
                         
                     	
                         });
@@ -218,6 +221,7 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfil.okenergetico = req.body.okenergetico;
                 perfil.okespecial = req.body.okespecial;
                 perfil.okqisuco = req.body.okqisuco;
+                perfil.passouselva = req.body.passouselva;
                 
                 //Realiza a atualizacao dos dados
                 perfil.save(function(err, perfil) {
