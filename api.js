@@ -70,7 +70,9 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         okespecial: perfil.okespecial,
                         okqisuco: perfil.okqisuco,
                         passouselva: perfil.passouselva,
-                        passoutemplo: perfil.passoutemplo
+                        passoutemplo: perfil.passoutemplo,
+                        okabobora: perfil.okabobora,
+                        qtdeabobora: perfil.qtdeabobora
                         
                 });
             } else {
@@ -116,6 +118,8 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfilrModel.okqisuco = req.body.okqisuco;
                 perfilrModel.passouselva = req.body.passouselva;
                 perfilrModel.passoutemplo = req.body.passoutemplo;
+                perfilrModel.okabobora = req.body.okabobora;
+                perfilrModel.qtdeabobora = req.body.qtdeabobora;
               
 
                 // Realiza o insert do Perfil
@@ -162,7 +166,9 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                         okespecial: perfilrModel.okespecial,
                         okqisuco: perfilrModel.okqisuco,
                         passouselva: perfilrModel.passouselva,
-                        passoutemplo: perfilrModel.passoutemplo
+                        passoutemplo: perfilrModel.passoutemplo,
+                        okabobora: perfilrModel.okabobora,
+                        qtdeabobora: perfilrModel.qtdeabobora
                     	
                         });
                 })
@@ -223,6 +229,8 @@ Perfil.findOne({id: req.body.id}, function(err, perfil) {
                 perfil.okqisuco = req.body.okqisuco;
                 perfil.passouselva = req.body.passouselva;
                 perfil.passoutemplo = req.body.passoutemplo;
+                perfil.okabobora = req.body.okabobora;
+                perfil.qtdeabobora = req.body.qtdeabobora;
                 
                 //Realiza a atualizacao dos dados
                 perfil.save(function(err, perfil) {
